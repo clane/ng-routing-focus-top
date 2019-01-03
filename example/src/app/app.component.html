@@ -9,7 +9,7 @@
 
 
 <ul role="navigation">
-<li><a (click)="onRoute($event)" routerLink="/component1">Component 1</a></li>
+	<li><a [attr.aria-current]="ariaCurrent1" (click)="onRoute($event)" routerLink="/component1">Component 1</a></li>
 <li><a (click)="onRoute($event)" routerLink="/component2">Component 2</a></li>
 <li><a (click)="onRoute($event)" routerLink="/component3">Component 3</a></li>
 <li><a (click)="onRoute($event)" routerLink="/component4">Component 4</a></li>

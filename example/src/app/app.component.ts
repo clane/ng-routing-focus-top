@@ -7,5 +7,9 @@ import { RoutingSignalService } from './routing-signal.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+constructor(private routingSignalService: RoutingSignalService) { }
+
+
+
 }

@@ -10,6 +10,20 @@ export class AppComponent {
 
 constructor(private routingSignalService: RoutingSignalService) { }
 
+@ViewChild('top') elementToFocusAfterRouting;
 
+  ngOnInit() {
+     this.routingSignalService.onRoute.subscribe( (e) => {
+        this.onRoute(e);
+     })
+   }
+
+   onRoute(e) {
+        if(e){
+           this.elementToFocusAfterRouting.nativeElement.textContent = "Top of " + e.target.innerText;
+           this.elementToFocusAfterRouting.nativeElement.blur();
+					 setTimeout(()=>{this.elementToFocusAfterRouting.nativeElement.focus();}, 500);
+        }
+   }
 
 }

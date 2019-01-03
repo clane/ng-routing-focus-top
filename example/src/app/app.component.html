@@ -1,5 +1,5 @@
 
-<div id="top" tabindex="-1">Top of component</div>
+<div id="top" #top tabindex="-1">Top of component</div>
 <h1>Angular - moving focus to the top after routing</h1>
 
 <ul>
@@ -9,10 +9,10 @@
 
 
 <ul role="navigation">
-<li><a routerLink="/component1">Component 1</a></li>
-<li><a routerLink="/component2">Component 2</a></li>
-<li><a routerLink="/component3">Component 3</a></li>
-<li><a routerLink="/component4">Component 4</a></li>
+<li><a (click)="onRoute($event)" routerLink="/component1">Component 1</a></li>
+<li><a (click)="onRoute($event)" routerLink="/component2">Component 2</a></li>
+<li><a (click)="onRoute($event)" routerLink="/component3">Component 3</a></li>
+<li><a (click)="onRoute($event)" routerLink="/component4">Component 4</a></li>
 </ul>
 
 <router-outlet></router-outlet>

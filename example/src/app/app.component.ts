@@ -12,7 +12,7 @@ constructor(private routingSignalService: RoutingSignalService) { }
 
 	@ViewChild('top') elementToFocusAfterRouting;
 
-  ariaCurrent1:string = "test";
+  ariaCurrent1:string = null;
   ariaCurrent2:string = null;
   ariaCurrent3:string = null;
   ariaCurrent4:string = null;
@@ -28,6 +28,7 @@ constructor(private routingSignalService: RoutingSignalService) { }
            this.elementToFocusAfterRouting.nativeElement.textContent = "Top of " + e.target.innerText;
            this.elementToFocusAfterRouting.nativeElement.blur();
 					 setTimeout(()=>{this.elementToFocusAfterRouting.nativeElement.focus();}, 500);
+					this.setCurrentRouterLink(e.target.innerText); 
         }
    }
 

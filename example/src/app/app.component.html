@@ -1,10 +1,18 @@
 
-<header>
-<h1 tabindex="-1"  id="top">Top Element</h1>
-    <nav>
-        <a (click)="onRoute($event)" routerLink="/component1">Component 1</a>
-    </nav>
-</header>
+<div id="top" tabindex="-1">Top of component</div>
+<h1 tabindex="-1" id="top">Angular - moving focus to the top after routing</h1>
 
+<ul>
+	<li><span>Github URL:&nbsp;</span><a href="https://github.com/clane/"> https://github.com/clane/React-routing-focus-top</a></li>
+	<li><span>Hosting URL:&nbsp;</span><a href="http://chrislane.info/REACT/"></a></li>
+</ul>
+
+
+<ul role="navigation">
+<li><a routerLink="/component1">Component 1</a></li>
+<li><a routerLink="/component2">Component 2</a></li>
+<li><a routerLink="/component3">Component 3</a></li>
+<li><a routerLink="/component4">Component 4</a></li>
+</ul>
 
 <router-outlet></router-outlet>

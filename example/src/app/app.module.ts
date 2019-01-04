@@ -18,7 +18,7 @@ import { Component4Component } from './component4/component4.component';
     Component4Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
 		RouterModule.forRoot([
 
     {

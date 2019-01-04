@@ -2,3 +2,9 @@
 a[aria-current=page] {
     font-weight: 700;
 }
+
+
+.cat {
+    width: 150px;
+    height: 150px;
+}
